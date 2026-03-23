@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>筋肉ティアリスト / Muscle Tier List | MuscleLove</title>
+    <meta name="description" content="MuscleLoveの筋肉画像をS〜Dランクに分けて、あなただけのティアリストを作ろう！ Drag & drop muscle images to create your personal tier list!">
+    <meta property="og:title" content="筋肉ティアリスト / Muscle Tier List | MuscleLove">
+    <meta property="og:description" content="筋肉をランク付けせよ！ Rank the muscles!">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">
+            <span class="title-jp">筋肉ティアリスト</span>
+            <span class="title-en">MUSCLE TIER LIST</span>
+        </h1>
+        <p class="subtitle">ドラッグ＆ドロップでランク付けせよ！ / Drag & drop to rank!</p>
+    </header>
+
+    <main class="main">
+        <div class="tier-container" id="tierContainer">
+            <div class="tier-row" data-tier="S">
+                <div class="tier-label tier-s">S</div>
+                <div class="tier-items" data-tier="S"></div>
+            </div>
+            <div class="tier-row" data-tier="A">
+                <div class="tier-label tier-a">A</div>
+                <div class="tier-items" data-tier="A"></div>
+            </div>
+            <div class="tier-row" data-tier="B">
+                <div class="tier-label tier-b">B</div>
+                <div class="tier-items" data-tier="B"></div>
+            </div>
+            <div class="tier-row" data-tier="C">
+                <div class="tier-label tier-c">C</div>
+                <div class="tier-items" data-tier="C"></div>
+            </div>
+            <div class="tier-row" data-tier="D">
+                <div class="tier-label tier-d">D</div>
+                <div class="tier-items" data-tier="D"></div>
+            </div>
+        </div>
+
+        <div class="unranked-section">
+            <div class="unranked-header">
+                <span class="unranked-label">未ランク / Unranked</span>
+            </div>
+            <div class="unranked-pool" id="unrankedPool"></div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-reset" id="btnReset">
+                <span class="btn-icon">🔄</span>
+                <span>リセット / Reset</span>
+            </button>
+            <button class="btn btn-share" id="btnShare">
+                <span class="btn-icon">🐦</span>
+                <span>Xでシェア / Share on X</span>
+            </button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="https://www.patreon.com/cw/MuscleLove" target="_blank" rel="noopener noreferrer" class="patreon-cta">
+            <span class="patreon-text">💪 もっと筋肉を見る / More Muscles on Patreon</span>
+        </a>
+        <p class="copyright">&copy; MuscleLove</p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
